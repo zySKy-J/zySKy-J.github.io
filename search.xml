@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>chrome浏览器 在HTTPS 网址中HTTP资源显示错误</title>
+      <link href="/2021/09/25/wang-zhi-zhong-http-zi-yuan-xian-shi-cuo-wu/"/>
+      <url>/2021/09/25/wang-zhi-zhong-http-zi-yuan-xian-shi-cuo-wu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="chrome浏览器-在HTTPS-网址中HTTP资源显示错误-net-ERR-SSL-VERSION-OR-CIPHER-MISMATCH"><a href="#chrome浏览器-在HTTPS-网址中HTTP资源显示错误-net-ERR-SSL-VERSION-OR-CIPHER-MISMATCH" class="headerlink" title="chrome浏览器 在HTTPS 网址中HTTP资源显示错误(net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH)"></a>chrome浏览器 在HTTPS 网址中HTTP资源显示错误(net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH)</h2><ul><li><strong>问题描述：</strong></li></ul><p>​        今天在写博客的时候发现文章中的图片在部署到GitHub无法加载出来，图片都是放在七牛云上生成的外链接，打开控制台发现如下报错信息：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="http://qzscj0npp.hn-bkt.clouddn.com/Snipaste_2021-09-25_15-25-35.png">    </p><p>百度了下找到问题所在：</p><p>在访问https的网页时，如果网页中有http的资源如图片、视频、或则音频等，均会出现访问失败，在控制台中会打印net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH</p><p>然后看请求资源地址，会发现本是http的数据资源会被强制加载成https</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="http://qzscj0npp.hn-bkt.clouddn.com/Snipaste_2021-09-25_15-29-37.png"></p><p>然后我查了很多资料终于在官方的通告中找到了这个问题</p><h1 id="这里给上官方通告"><a href="#这里给上官方通告" class="headerlink" title="这里给上官方通告"></a>这里给上官方通告</h1><p><a href="https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html">https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html</a></p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/6ff84cebe3214e0c886aa5e49277eb6a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAcXFfNDA4NzU1Nzc=,size_20,color_FFFFFF,t_70,g_se,x_16"></p><ul><li><strong>解决方案：</strong><br>点击地址栏中的网站设置</li></ul><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/a859104084a94ba9add1de8cae8db636.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAcXFfNDA4NzU1Nzc=,size_17,color_FFFFFF,t_70,g_se,x_16"></p><p>找到其中的不安全内容，将其设置为允许，然后刷新网页即可</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/e32e842c608a4a58a2a64afcd4bc576e.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAcXFfNDA4NzU1Nzc=,size_20,color_FFFFFF,t_70,g_se,x_16"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑及填坑 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> chrome </tag>
+            
+            <tag> HTTPS </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java基础语法-流程控制</title>
       <link href="/2021/09/25/java-ji-chu-yu-fa-liu-cheng-kong-zhi/"/>
       <url>/2021/09/25/java-ji-chu-yu-fa-liu-cheng-kong-zhi/</url>
