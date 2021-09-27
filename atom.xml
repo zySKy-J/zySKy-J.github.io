@@ -6,7 +6,7 @@
   <link href="https://zysky-j.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysky-j.github.io/"/>
-  <updated>2021-09-26T13:51:38.691Z</updated>
+  <updated>2021-09-27T14:06:43.778Z</updated>
   <id>https://zysky-j.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>方法</title>
+    <link href="https://zysky-j.github.io/2021/09/26/fang-fa/"/>
+    <id>https://zysky-j.github.io/2021/09/26/fang-fa/</id>
+    <published>2021-09-26T13:58:56.000Z</published>
+    <updated>2021-09-27T14:06:43.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;第一章-方法&quot;&gt;&lt;a href=&quot;#第一章-方法&quot; class=&quot;headerlink&quot; title=&quot;第一章 方法&quot;&gt;&lt;/a&gt;第一章 方法&lt;/h1&gt;&lt;h2 id=&quot;1-1-回顾–方法的定义和调用&quot;&gt;&lt;a href=&quot;#1-1-回顾–方法的定义和调用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://zysky-j.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Java" scheme="https://zysky-j.github.io/tags/Java/"/>
+    
+    <category term="Java基础" scheme="https://zysky-j.github.io/tags/Java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>数组</title>
